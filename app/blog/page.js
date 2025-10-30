@@ -1,65 +1,21 @@
-
+import Navbar from "../pcomponent/navbar";
+import Herosection from "../pcomponent/herosection"; 
+import BlogContent from "../pcomponent/blogcontent";   
 
 export default function BlogPage() {
   return (
-    <div className="bg-gray-100  overflow-x-hidden">
+    <div className="bg-gray-200  overflow-x-hidden">
      <div>
       <Navbar />
-      <Herosection/>
-      <BlogContent/>
+      <Herosection title="Blog Single"/>
+      <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />
+      <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2-full.jpg&w=3840&q=75" title="This prefabricated passive house highly"/>
+      <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75" title="Overcame breeding point concerns has."/>
+      <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F4-full.jpg&w=3840&q=75" title="Breeding point has terminate the hole."/>
+      <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F5-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts ham"/>
      </div>
     </div>
   );
 }
 
 
-function Navbar() {
-  return (
-    <nav className="bg-white p-4 ">
-      <ul className="flex justify-between items-center">
-        <li>
-            <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=1A1A1A" alt="menu" className="h-8" />
-        </li>
-        <li>
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo.png&w=1920&q=75" alt="Logo" className="h-16"/>
-        </li>
-        <li>
-            <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=1A1A1A" alt="cart" className="h-12" />
-        </li>
-      </ul>
-    </nav>
-  );
-}
-
-function Herosection() {
-return(<>
-    <div className="  relative overflow-hidden  bg-black pt-24">
-        <img src="https://di-uploads-pod6.dealerinspire.com/jaguarnewportbeach/uploads/2018/12/Depositphotos_46548367_xl-2015.jpg" alt="sushi" className="w-full scale-150"/>
-        <h1 className=" absolute top-20 text-center font-bold text-3xl bg-black/45 w-full h-full">Blog Single</h1>
-    </div>
-</>
-);
-}
-
-function BlogContent({image}) {
-    return(
-        <div className="">
-            <img src={image} alt="blog image"/>
-            <div>
-                <div>
-                    <div>
-                        <img src="https://img.icons8.com/?size=100&id=89550&format=png&color=1A1A1A" alt="calendar" className="h-4  mr-2"/>
-                        12 August,2024
-                    </div>
-                    <div>
-                        <img src="https://img.icons8.com/?size=100&id=Fx70T4fgtNmt&format=png&color=000000"/>
-                    </div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            
-        </div>
-    );
-}
