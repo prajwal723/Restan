@@ -41,7 +41,7 @@ export default function MenuPage() {
                  <br/>
                  <p className="font-semibold font-serif text-2xl text-black">Matthew J. Wyman</p>
                  <p className="text-[#75562d] font-semibold">SENIOR CONSULTANT</p>
-            </div>
+            </div> 
         </div>
         
     </>
