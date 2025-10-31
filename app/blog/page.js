@@ -7,7 +7,7 @@ export default function BlogPage() {
     <div className="bg-gray-200  overflow-x-hidden">
      <div>
       <Navbar />
-      <Herosection title="Blog Single"/>
+      <Herosection title="Blog Standard"/>
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2-full.jpg&w=3840&q=75" title="This prefabricated passive house highly"/>
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75" title="Overcame breeding point concerns has."/>
