@@ -1,8 +1,10 @@
 
 
 export default function Footer(){
-return(<>
-    <div className="xl:hidden display flex-col content-start font-sans max-width mt-5 bg-zinc-950 pl-8 pt-5">
+    
+return(
+    <div className="bg-black 2xl:bg-white ">
+    <div className="xl:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden bg-white">
            {/*     For Mobile View*/}
             <div className="disply text-xs font-semibold">
                 About Us
@@ -119,7 +121,7 @@ return(<>
 
 
 
-             <div className="hidden xl:flex  bg-zinc-950 w-200 ml-80 flex-row pr-2 mt-[-10px]  relative z-20 pb-5">
+             <div className="hidden xl:flex  bg-zinc-950 w-200 ml-80 flex-row px-2 mt-[-122px]  relative z-50 pb-5">
                     <div>
                             <div className="disply text-xs font-semibold pt-5">
                 About Us
@@ -145,7 +147,7 @@ return(<>
                     </div>
 
                     <div>
-                            <div className="disply text-xs font-semibold mt-5 pl-4 pr-6">
+                            <div className="disply text-xs font-semibold mt-5 px-6">
                 Explore
                 <div className=" display text-[8px] font-normal mt-3 text-stone-300">
                     Company Profile
@@ -256,11 +258,11 @@ return(<>
 
 
              
-        <div className="hidden xl:flex mt-[-70px] relative z-10 ">
+        <div className="hidden xl:flex mt-[-70px] relative z-10 xl:bg-white">
             {/* For Laptop View*/}
           
            
-            <div className=" flex flex-row bg-zinc-800 max-h-40 z-10">
+            <div className=" flex flex-row bg-zinc-800 h-40 z-20">
                              <div className=" flex w-80 ">
                                 <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F9.png&w=640&q=75" className="max-h-40"/>
                          </div>
@@ -280,8 +282,10 @@ return(<>
             </div>
             </div>
 
-        
-         </>
+       
+    
+            </div>
+       
 )
 }
  
