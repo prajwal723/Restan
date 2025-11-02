@@ -15,7 +15,7 @@ export default function BlogContent({image,title,description}) {
                 </div>
                 <div className="text-black font-semibold text-3xl">{title}</div>
                 <div>Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now</div>
-                <button className="bg-[#75562d] p-3 text-white px-7 rounded-4xl hover:bg-black">Read More</button>
+                <button className="bg-[#826a45] p-3 text-white px-7 rounded-4xl hover:bg-black">Read More</button>
             </div>
             
         </div>

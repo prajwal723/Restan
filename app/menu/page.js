@@ -7,7 +7,7 @@ export default function MenuPage() {
         <Navbar/>
         <Herosection title="Food Menu"/>
         <div className="bg-gray-200 pt-8 pb-20 overflow-x-hidden ">
-            <h2 className="text-[#75562d] font-serif text-xl text-center font-medium">CATEGORY</h2>
+            <h2 className="text-[#826a45] font-serif text-xl text-center font-medium">CATEGORY</h2>
             <h1 className="font-bold text-4xl text-black text-center">Choose Your Best Food</h1>
             <div>
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F1.jpg&w=1920&q=75" title="Pizza Slice" ratings="5.0"/>
@@ -24,13 +24,13 @@ export default function MenuPage() {
                 <div className=" absolute scale-150 top-0 px-16 py-3 bg-black/40 w-full h-full">
                     <h1 className="text-2xl font-medium">30 Minutes Delivery!</h1>
                     <p className="text-[9px] my-2.5 ">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
-                    <button className="bg-[#75562d] p-2 text-white px-4 rounded-3xl text-[11px] hover:bg-black">Order Now</button>
+                    <button className="bg-[#826a45] p-2 text-white px-4 rounded-3xl text-[11px] hover:bg-black">Order Now</button>
                 </div>
             </div>
 
 
-            <div className="justify-items-center-safe mt-28 text-center space-y-3">
-                 <h2 className="text-[#75562d] font-serif text-xl font-medium">HAPPY CUSTOMERS</h2>
+            <div className="justify-items-center-safe mt-28 m-3 text-center space-y-3">
+                 <h2 className="text-red-600 font-serif text-xl font-medium">HAPPY CUSTOMERS</h2>
                  <h1 className="font-bold text-4xl text-black">Our Customers Feedback</h1>
                 <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75" alt="review" className="rounded-full my-5 h-72 shadow-md shadow-blue-200"/>
                 <p className="text-gray-700">⭐⭐⭐⭐⭐ (5/5)</p>
@@ -40,7 +40,7 @@ export default function MenuPage() {
                  <hr className=" border-black w-full"/>
                  <br/>
                  <p className="font-semibold font-serif text-2xl text-black">Matthew J. Wyman</p>
-                 <p className="text-[#75562d] font-semibold">SENIOR CONSULTANT</p>
+                 <p className="text-red-600 font-semibold">SENIOR CONSULTANT</p>
             </div> 
         </div>
         

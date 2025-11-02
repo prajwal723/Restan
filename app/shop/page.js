@@ -25,8 +25,8 @@ function Shopcontent({img,desc,title,price}){
         <div className="text-center space-y-1.5">
             <p className="text-gray-700">{desc}</p>
             <p className="font-semibold  text-2xl text-black/80">{title}</p>
-            <p className="text-[#75562d] text-xl font-semibold">${price}</p>
-            <button className="border-2 border-[#75562d] rounded-3xl text-black/75 px-7 py-3 font-semibold text-[14px]">ADD TO CART</button>
+            <p className="text-[#826a45] text-xl font-semibold">${price}</p>
+            <button className="border-2 border-[#826a45] rounded-3xl text-black/75 px-7 py-3 font-semibold text-[14px]">ADD TO CART</button>
         </div>
     </div>
     </>
