@@ -5,7 +5,7 @@ import BlogContent from "../pcomponent/blogcontent";
 export default function BlogPage() {
   return (
     <div className="bg-gray-200  overflow-x-hidden">
-     <div>
+     <div >
       <Navbar />
       <Herosection title="Blog Standard"/>
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />

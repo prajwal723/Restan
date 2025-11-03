@@ -1,7 +1,7 @@
 export default function FoodMenu({image,title,ratings}) {
     return <>
-        <div className="bg-white mx-3 pb-8 mt-8 shadow-md rounded-xl space-y-3">
-            <img src={image} alt="food item" className="rounded-t-xl"/>
+        <div className="bg-white mx-3 pb-8 mt-8 shadow-md rounded-xl md:w-fit space-y-3 ">
+            <img src={image} alt="food item" className="rounded-t-xl md:h-64"/>
             <div className=" flex flex-row gap-16 my-7 items-center">
                 <button className="border-l-[#826a45] border-2 relative text-gray-200  bg-gray-200 px-16 py-7 rounded-r-4xl">
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F5.jpg&w=640&q=75" alt="image" className="absolute  rounded-full border-2 top-2 left-6 border-white h-10"/>

@@ -6,14 +6,16 @@ export default function ShopPage() {
     <div className="bg-gray-200">
         <Navbar/>
         <Herosection title="Special Food"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00"/>
-        <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00"/>
+        <div className="md:grid md:grid-cols-4 md:mx-7 md:pb-9">
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00"/>
+        </div>
     </div>
     </>
 }
