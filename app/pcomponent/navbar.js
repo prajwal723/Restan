@@ -22,7 +22,7 @@ export default function Navbar() {
         </ul>
 
         <li>
-            <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=1A1A1A" alt="cart" className="h-12 md:ml-80" />
+            <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=1A1A1A" alt="cart" className="h-12 md:ml-80" onClick={()=>router.push('/cart')}/>
         </li>
       </ul>
       {menu?<Menucontent/>:null}

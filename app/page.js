@@ -4,8 +4,10 @@ import { useState } from "react";
 import Navbar from "./pcomponent/navbar";
 import FoodMenu from "./pcomponent/menucontent";
 import BlogContent from "./pcomponent/blogcontent";
+import Footer from "./Acomponent/Footer/page";  
 
 export default function HomePage() {
+    const [dishes,setdishes]=useState(1);
 return<>
 <Navbar/>
     <div className="relative overflow-x-hidden bg-gray-100  pt-14 md:pt-28">
@@ -51,25 +53,24 @@ return<>
             <div className="bg-black mt-10 py-12 p-3 justify-start space-y-3 md:w-lg md:p-14 md:space-y-5 md:mt-3">
                 <h1 className="text-white font-medium md:text-lg">FOOD MENU</h1>
                 <h2 className="text-white text-4xl my-5 font-semibold md:text-5xl">Our Specials Menu</h2>
-                <button className="p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg bg-red-700 md:text-xl">MAIN DISHES
+                <button className={`p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg ${dishes==1?'bg-red-700':'null'} md:text-xl`} onClick={()=>{setdishes(1)}}>MAIN DISHES
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F9.png&w=64&q=75" alt="icon" className="h-4 md:h-5"/>
                 </button>
-                <button className="p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg md:text-xl">DESSERTS
+                <button className={`p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg ${dishes==2?'bg-red-700':'null'} md:text-xl`} onClick={()=>{setdishes(2)}}>DESSERTS
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F10.png&w=64&q=75" alt="icon" className="h-4 md:h-5"/>
                 </button>
-                <button className="p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg md:text-xl">SEA FOOD
+                <button className={`p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg ${dishes==3?'bg-red-700':'null'} md:text-xl`} onClick={()=>{setdishes(3)}}>SEA FOOD
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F11.png&w=64&q=75" alt="icon" className="h-4 md:h-5"/>
                 </button>
-                <button className="p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg md:text-xl">BEVERAGE
+                <button className={`p-4 w-full border-1 justify-between flex border-gray-300 rounded-lg ${dishes==4?'bg-red-700':'null'} md:text-xl`} onClick={()=>{setdishes(4)}}>BEVERAGE
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F12.png&w=64&q=75" alt="icon" className="h-4 md:h-5"/>
                  </button>
             </div>
-            <div className="md:w-1/2 md:pl-24 ">
-                <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F1.jpg&w=640&q=75" title="Chicken Alfredo" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
-                <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F2.jpg&w=640&q=75" title="Fish Chips" price1="$36" price2="$70" desc="Atlantic / chips / salad / tartare"/>
-                <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F3.jpg&w=640&q=75" title="Ebony Fillet Steak" price1="$44" price2="$85" desc="Truffle mash / pepper sauce"/>
-                <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F4.jpg&w=640&q=75" title="Chicken Grill" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
-            </div>
+            
+                {dishes==1?<Dish1/>:null}
+                {dishes==2?<Dish2/>:null}
+                {dishes==3?<Dish3/>:null}
+                {dishes==4?<Dish4/>:null} 
         </div>
 
         <div className="justify-items-center-safe mt-10 md:mt-20 m-3 space-y-7">
@@ -79,7 +80,7 @@ return<>
             </div>
             <div className="md:flex space-y-7 md:gap-7">
                 <div className="space-y-7">
-                    <img src="https://restan-nextjs.vercel.app/assets/img/portfolio/1.jpg" alt="item" className="md:w-92.5"/>
+                    <img src="https://restan-nextjs.vercel.app/assets/img/portfolio/1.jpg" alt="item" className="md:w-92.5" />
                 </div>
                 <div className="space-y-7">
                     <img src="https://restan-nextjs.vercel.app/assets/img/portfolio/2.jpg" alt="item" className="md:w-107.5"/>
@@ -157,12 +158,14 @@ return<>
         </div>
 
 
-        <div className="mt-14 justify-items-center space-y-3">
+        <div className="mt-14 justify-items-center space-y-3 md:mb-40">
             <h1 className="text-xl text-red-700 font-serif font-medium md:text-2xl">NEWS & BLOG</h1>
             <h2 className="text-3xl text-black text-center font-semibold md:text-5xl">Our Latest News & Blog</h2>
             <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />
             <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2-full.jpg&w=3840&q=75" title="This prefabricated passive house highly"/>
         </div>
+
+        <Footer/>
     </div>
 </>
 
@@ -172,7 +175,7 @@ function Dishes({img,title,price1,price2,desc}){
     return <>
         <div className="pt-5 mx-3 flex md:gap-7 md:items-center md:mx-0 ">
             <img src={img} alt={title} className=" md:h-24 rounded-full hidden md:block"/>
-            <div className="md:space-y-4 w-full">
+            <div className="md:space-y-4 w-full md:pt-1">
                 <div className="mb-2 flex justify-between">
                     <div className="text-black font-semibold text-xl">{title}</div> 
                     <div className="text-red-700 font-semibold text-xl">{price1} - {price2}</div>
@@ -181,6 +184,51 @@ function Dishes({img,title,price1,price2,desc}){
                 <p className="text-gray-700 ">Free Drinks</p>
                 <hr className="border-1 mt-5 border-gray-300"/>
             </div>
+        </div>
+    </>
+}
+
+function Dish1(){
+    return<>
+         <div className="md:w-1/2 md:pl-24 ">
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F1.jpg&w=640&q=75" title="Chicken Alfredo" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F2.jpg&w=640&q=75" title="Fish Chips" price1="$36" price2="$70" desc="Atlantic / chips / salad / tartare"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F3.jpg&w=640&q=75" title="Ebony Fillet Steak" price1="$44" price2="$85" desc="Truffle mash / pepper sauce"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F4.jpg&w=640&q=75" title="Chicken Grill" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
+        </div>
+    </>
+}
+
+
+function Dish2(){
+    return<>
+         <div className="md:w-1/2 md:pl-24 ">
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F5.jpg&w=256&q=75" title="Cupcakes" price1="$10" price2="$20" desc="Ricotta / goat cheese / beetroot"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F6.jpg&w=256&q=75" title="Brownies" price1="$16" price2="$30" desc="Atlantic / chips / salad / tartare"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F7.jpg&w=256&q=75" title="Muffins" price1="$22" price2="$40" desc="Truffle mash / pepper sauce"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F8.jpg&w=256&q=75" title="Cheesecakes" price1="$34" price2="$65" desc="Ricotta / goat cheese / beetroot"/>
+        </div>
+    </>
+}
+
+function Dish3(){
+    return<>
+         <div className="md:w-1/2 md:pl-24 ">
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F9.jpg&w=256&q=75" title="Salmon Fry" price1="$40" price2="$80" desc="Ricotta / goat cheese / beetroot"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F10.jpg&w=256&q=75" title="Pangasius or Basa" price1="$16" price2="$30" desc="Atlantic / chips / salad / tartare"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F11.jpg&w=256&q=75" title="Clams" price1="$45" price2="$90" desc="Truffle mash / pepper sauce"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F12.jpg&w=256&q=75" title="Red Crab" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
+        </div>
+    </>
+}
+
+function Dish4(){
+    return<>
+         <div className="md:w-1/2 md:pl-24 ">
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F13.jpg&w=256&q=75" title="Wine" price1="$34" price2="$65" desc="Ricotta / goat cheese / beetroot"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F14.jpg&w=256&q=75" title="Coffee" price1="$45" price2="$90" desc="Atlantic / chips / salad / tartare"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F15.jpg&w=256&q=75" title="Hot chocolate" price1="$44" price2="$85" desc="Truffle mash / pepper sauce"/>
+            <Dishes img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F16.jpg&w=256&q=75" title="Milk Shake" price1="$20" price2="$40" desc="Ricotta / goat cheese / beetroot"/>
         </div>
     </>
 }

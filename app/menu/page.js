@@ -1,12 +1,16 @@
+"use client"
 import Navbar from "../pcomponent/navbar";
 import Herosection from "../pcomponent/herosection"; 
 import FoodMenu from "../pcomponent/menucontent";
+import Footer from "../Acomponent/Footer/page";
+import { useRouter } from "next/navigation";
 
 export default function MenuPage() {
+    const router=useRouter();
     return <>
         <Navbar/>
         <Herosection title="Food Menu"/>
-        <div className="bg-gray-200 pt-8 pb-20 overflow-x-hidden md:pt-24">
+        <div className="bg-gray-200 pt-8 pb-20 overflow-x-hidden md:pt-24 md:mb-32">
             <h2 className="text-[#826a45] font-serif text-xl text-center font-medium md:text-2xl md:mb-3">CATEGORY</h2>
             <h1 className="font-bold text-4xl text-black text-center md:text-6xl">Choose Your Best Food</h1>
             <div className="md:grid md:grid-cols-4 md:mx-14 ">
@@ -25,7 +29,7 @@ export default function MenuPage() {
                     <div className="space-y-7">
                         <h1 className="text-5xl  font-medium md:text-8xl md:w-1/2">30 Minutes Delivery!</h1>
                         <p className="text-[15px] text-gray-300  my-2.5 md:w-1/2 md:text-lg">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
-                        <button className="bg-[#826a45] p-4 mt-6 text-white px-8 rounded-4xl hover:bg-black md:text-2xl">Order Now</button>
+                        <button className="bg-[#826a45] p-4 mt-6 text-white px-8 rounded-4xl hover:bg-black md:text-2xl" onClick={()=>router.push('/shop')}>Order Now</button>
                     </div>
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75" alt="delivery boy" className="hidden md:block md:w-1/3 absolute right-10 top-20"/>
                 </div>
@@ -56,6 +60,7 @@ export default function MenuPage() {
                 </div>
             </div> 
         </div>
+        <Footer/>
         
     </>
 }

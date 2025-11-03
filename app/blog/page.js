@@ -1,11 +1,12 @@
 import Navbar from "../pcomponent/navbar";
 import Herosection from "../pcomponent/herosection"; 
-import BlogContent from "../pcomponent/blogcontent";   
+import BlogContent from "../pcomponent/blogcontent"; 
+import Footer from "../Acomponent/Footer/page";  
 
 export default function BlogPage() {
   return (
     <div className="bg-gray-200  overflow-x-hidden">
-     <div >
+     <div  className="md:pb-36">
       <Navbar />
       <Herosection title="Blog Standard"/>
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />
@@ -14,6 +15,7 @@ export default function BlogPage() {
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F4-full.jpg&w=3840&q=75" title="Breeding point has terminate the hole."/>
       <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F5-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts ham"/>
      </div>
+      <Footer/>
     </div>
   );
 }

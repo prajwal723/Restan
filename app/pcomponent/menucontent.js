@@ -1,6 +1,6 @@
 export default function FoodMenu({image,title,ratings}) {
     return <>
-        <div className="bg-white mx-3 pb-8 mt-8 shadow-md rounded-xl md:w-fit space-y-3 ">
+        <div className="bg-white mx-3 pb-8 mt-8 shadow-lg rounded-xl md:w-fit space-y-3 hover:scale-105 group">
             <img src={image} alt="food item" className="rounded-t-xl md:h-64"/>
             <div className=" flex flex-row gap-16 my-7 items-center">
                 <button className="border-l-[#826a45] border-2 relative text-gray-200  bg-gray-200 px-16 py-7 rounded-r-4xl">
@@ -12,7 +12,7 @@ export default function FoodMenu({image,title,ratings}) {
             </div>
             <h2 className="text-black font-semibold text-2xl px-7 hover:text-[#826a45]">{title}</h2>
             <p className=" text-gray-800 px-7">Cheese, Ham & Pineapple</p>
-            <button className="bg-[#826a45] p-3 mx-7 text-white px-7 rounded-4xl hover:bg-black">ORDER NOW</button>
+            <button className="bg-[#826a45] p-3 mx-7 text-white px-7 rounded-4xl group-hover:bg-red-800">ORDER NOW</button>
         </div>
     </>
 }

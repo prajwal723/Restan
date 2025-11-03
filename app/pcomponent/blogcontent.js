@@ -1,7 +1,7 @@
 export default function BlogContent({image,title,description}) {
     return(
         <div className=" bg-white rounded-md m-3 my-10 text-gray-800 space-y-3 md:mx-20">
-            <img src={image} alt="blog image" className="rounded-t-md"/>
+            <img src={image} alt="blog image" className="rounded-t-md "/>
             <div className="space-y-3 p-5">
                 <div className=" flex flex-col text-sm md:text-lg space-y-1"> 
                     <div className="flex flex-row">
