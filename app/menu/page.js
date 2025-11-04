@@ -10,9 +10,9 @@ export default function MenuPage() {
     return <>
         <Navbar/>
         <Herosection title="Food Menu"/>
-        <div className="bg-gray-200 pt-8 pb-20 overflow-x-hidden md:pt-24 md:mb-32">
-            <h2 className="text-[#826a45] font-serif text-xl text-center font-medium md:text-2xl md:mb-3">CATEGORY</h2>
-            <h1 className="font-bold text-4xl text-black text-center md:text-6xl">Choose Your Best Food</h1>
+        <div className="bg-gray-200 dark:bg-neutral-900 pt-8 pb-20 overflow-x-hidden md:pt-24 md:mb-32 ">
+            <h2 className="text-[#826a45] font-serif text-xl text-center font-medium md:text-2xl md:mb-3 dark:text-[#daa85d]">CATEGORY</h2>
+            <h1 className="font-bold text-4xl text-black text-center md:text-6xl dark:text-white">Choose Your Best Food</h1>
             <div className="md:grid md:grid-cols-4 md:mx-14 ">
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F1.jpg&w=1920&q=75" title="Pizza Slice" ratings="5.0"/>
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F2.jpg&w=1920&q=75" title="Cheese Burger" ratings="4.5"/> 
@@ -36,8 +36,8 @@ export default function MenuPage() {
 
 
             <div className=" mt-28 m-3  space-y-3">
-                 <h2 className="text-[#826a45] font-serif text-xl font-medium text-center md:text-2xl">HAPPY CUSTOMERS</h2>
-                 <h1 className="font-bold text-4xl text-black text-center md:text-6xl">Our Customers Feedback</h1>
+                 <h2 className="text-[#826a45] font-serif text-xl font-medium text-center md:text-2xl dark:text-[#daa85d]">HAPPY CUSTOMERS</h2>
+                 <h1 className="font-bold text-4xl text-black text-center md:text-6xl dark:text-white md:mb-10">Our Customers Feedback</h1>
                 <div className="md:flex md:flex-row md:justify-between md:mx-20">
                     <div className="relative">
                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75" alt="review" className="rounded-full my-5 h-72 shadow-md shadow-blue-200 md:h-96"/>
@@ -46,14 +46,14 @@ export default function MenuPage() {
                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F7.jpg&w=640&q=75" alt="c" className="absolute rounded-full h-28 border-3 hidden md:block shadow-2xl border-white top-80 left-64"/>
                     </div>
                     <div className="md:w-1/2 md:mt-10 space-y-6">
-                        <p className="text-gray-700 md:text-2xl">⭐⭐⭐⭐⭐ (5/5)</p>
-                        <h1 className="font-bold text-4xl text-black ">The best food ever</h1>
-                        <p className="text-gray-700 md:text-xl">“Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.”</p>
+                        <p className="text-gray-700 md:text-2xl dark:text-neutral-500">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <h1 className="font-bold text-4xl text-black dark:text-white">The best food ever</h1>
+                        <p className="text-gray-700 md:text-xl dark:text-neutral-500">“Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.”</p>
                         
                         <hr className=" border-black w-full"/>
                         
                        <div>
-                            <p className="font-semibold font-serif text-2xl mb-2  text-black">Matthew J. Wyman</p>
+                            <p className="font-semibold font-serif text-2xl mb-2  text-black dark:text-white">Matthew J. Wyman</p>
                             <p className="text-[#826a45] font-semibold">SENIOR CONSULTANT</p>
                        </div>
                     </div>

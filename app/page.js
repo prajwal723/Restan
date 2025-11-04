@@ -10,12 +10,12 @@ export default function HomePage() {
     const [dishes,setdishes]=useState(1);
 return<>
 <Navbar/>
-    <div className="relative overflow-x-hidden bg-gray-100  pt-14 md:pt-28">
+    <div className="relative overflow-x-hidden bg-gray-100 dark:bg-neutral-900 pt-14 md:pt-28">
         <img src="/best-restaurant.png" alt="Best restaurant" className=" scale-200 md:scale-100"/>
         <h1  className=" absolute top-16 md:top-56 md:text-7xl text-center font-bold text-4xl w-full">Best Restaurant</h1>
         <div className="pt-24">
-            <h2 className="text-[#826a45] font-serif text-xl md:text-2xl text-center font-medium">CATEGORY</h2>
-            <h1 className="font-bold text-4xl text-black text-center md:text-6xl md:my-4">Choose Your Best Food</h1>
+            <h2 className="text-[#826a45] font-serif text-xl md:text-2xl text-center font-medium dark:text-[#daa85d]">CATEGORY</h2>
+            <h1 className="font-bold text-4xl text-black text-center md:text-6xl md:my-4 dark:text-white">Choose Your Best Food</h1>
             <div className="md:grid md:grid-cols-4 md:mx-14 "> 
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F1.jpg&w=1920&q=75" title="Pizza Slice" ratings="5.0"/>
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F2.jpg&w=1920&q=75" title="Cheese Burger" ratings="4.5"/> 
@@ -35,15 +35,15 @@ return<>
 
             <div className="space-y-4 md:mt-24 md:w-6xl md:ml-16 md:space-y-7">
                 <p className="text-red-700 text-2xl font-medium md:text-3xl">About us</p>
-                <p className="text-black text-4xl font-semibold md:text-6xl">Come for our fresh, delicious food you won’t forget.</p>
-                <p className="text-gray-700 md:text-xl">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
+                <p className="text-black text-4xl font-semibold md:text-6xl dark:text-white">Come for our fresh, delicious food you won’t forget.</p>
+                <p className="text-gray-700 md:text-xl dark:text-neutral-500">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
                 <div className="md:flex md:gap-8">
                     <div>
                         <button className="bg-red-700 text-white py-4 px-5 rounded-4xl md:text-2xl">Discover More</button>
                     </div>
                     <div className="hidden md:block">
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2Fsigneture.png&w=828&q=75" className="h-10"/>
-                        <p className="text-gray-700 md:text-xl">CEO, of Restan Restaurant</p>
+                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2Fsigneture.png&w=828&q=75" className="h-10 dark:bg-neutral-700 dark:px-3"/>
+                        <p className="text-gray-700 md:text-xl dark:text-neutral-500">CEO, of Restan Restaurant</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ return<>
         <div className="justify-items-center-safe mt-10 md:mt-20 m-3 space-y-7">
             <div>
                 <p className="text-red-700 text-center mb-1 font-semibold text-xl md:text-2xl">FOOD ITEM</p>
-                <p className="text-black text-center font-semibold text-3xl md:text-6xl">Our Food Gallery</p>
+                <p className="text-black text-center font-semibold text-3xl md:text-6xl dark:text-white">Our Food Gallery</p>
             </div>
             <div className="md:flex space-y-7 md:gap-7">
                 <div className="space-y-7">
@@ -95,9 +95,9 @@ return<>
         </div>
 
 
-      <div className=" mt-28 m-3  space-y-3 md:bg-gray-300 md:py-20 md:mx-0 md:px-3 md:m-0 md:mt-16">
-                 <h2 className="text-[#826a45] font-serif text-xl font-medium text-center md:text-2xl">HAPPY CUSTOMERS</h2>
-                 <h1 className="font-bold text-4xl text-black text-center md:text-6xl">Our Customers Feedback</h1>
+      <div className=" mt-28 m-3  space-y-3 md:bg-gray-300 md:py-20 md:mx-0 md:px-3 md:m-0 md:mt-16 dark:bg-neutral-800">
+                 <h2 className="text-[#826a45] font-serif text-xl font-medium text-center md:text-2xl dark:text-[#daa85d]">HAPPY CUSTOMERS</h2>
+                 <h1 className="font-bold text-4xl text-black text-center md:text-6xl dark:text-white md:mb-10">Our Customers Feedback</h1>
                 <div className="md:flex md:flex-row md:justify-between md:mx-20">
                     <div className="relative">
                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75" alt="review" className="rounded-full my-5 h-72 shadow-md shadow-blue-200 md:h-96"/>
@@ -106,14 +106,14 @@ return<>
                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F7.jpg&w=640&q=75" alt="c" className="absolute rounded-full h-28 border-3 hidden md:block shadow-2xl border-white top-80 left-64"/>
                     </div>
                     <div className="md:w-1/2 md:mt-10 space-y-6">
-                        <p className="text-gray-700 md:text-2xl">⭐⭐⭐⭐⭐ (5/5)</p>
-                        <h1 className="font-bold text-4xl text-black ">The best food ever</h1>
-                        <p className="text-gray-700 md:text-xl">“Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.”</p>
+                        <p className="text-gray-700 md:text-2xl dark:text-neutral-500">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <h1 className="font-bold text-4xl text-black dark:text-white">The best food ever</h1>
+                        <p className="text-gray-700 md:text-xl dark:text-neutral-500">“Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.”</p>
                         
-                        <hr className=" border-black w-full"/>
+                        <hr className=" border-black w-full dark:border-neutral-500"/>
                         
                        <div>
-                            <p className="font-semibold font-serif text-2xl mb-2  text-black">Matthew J. Wyman</p>
+                            <p className="font-semibold font-serif text-2xl mb-2  text-black dark:text-white">Matthew J. Wyman</p>
                             <p className="text-[#826a45] font-semibold">SENIOR CONSULTANT</p>
                        </div>
                     </div>
@@ -160,7 +160,7 @@ return<>
 
         <div className="mt-14 justify-items-center space-y-3 md:mb-40">
             <h1 className="text-xl text-red-700 font-serif font-medium md:text-2xl">NEWS & BLOG</h1>
-            <h2 className="text-3xl text-black text-center font-semibold md:text-5xl">Our Latest News & Blog</h2>
+            <h2 className="text-3xl text-black text-center font-semibold md:text-5xl dark:text-white">Our Latest News & Blog</h2>
             <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" title="Picked up a Brussels burger Sprouts." />
             <BlogContent image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2-full.jpg&w=3840&q=75" title="This prefabricated passive house highly"/>
         </div>
@@ -177,12 +177,12 @@ function Dishes({img,title,price1,price2,desc}){
             <img src={img} alt={title} className=" md:h-24 rounded-full hidden md:block"/>
             <div className="md:space-y-4 w-full md:pt-1">
                 <div className="mb-2 flex justify-between">
-                    <div className="text-black font-semibold text-xl">{title}</div> 
+                    <div className="text-black font-semibold text-xl dark:text-white">{title}</div> 
                     <div className="text-red-700 font-semibold text-xl">{price1} - {price2}</div>
                 </div>
-                <p className="text-gray-700 ">{desc}</p>
-                <p className="text-gray-700 ">Free Drinks</p>
-                <hr className="border-1 mt-5 border-gray-300"/>
+                <p className="text-gray-700 dark:text-neutral-400">{desc}</p>
+                <p className="text-gray-700 dark:text-neutral-400">Free Drinks</p>
+                <hr className="border-1 mt-5 border-gray-300 dark:border-neutral-600"/>
             </div>
         </div>
     </>
