@@ -3,8 +3,8 @@
 export default function Footer(){
     
 return(
-    <div className=" 2xl:bg-white ">
-    <div className="xl:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden ">
+    <div>
+    <div className="md:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden ">
            {/*     For Mobile View*/}
             <div className="disply text-xs font-semibold">
                 About Us
@@ -121,7 +121,7 @@ return(
 
 
 
-             <div className="hidden xl:flex  bg-zinc-950 w-200 ml-80 flex-row px-2 mt-[-122px]  relative z-50 pb-5">
+             <div className="hidden md:flex  bg-zinc-950 w-200 md:mx-30 xl:ml-80 flex-row px-2 mt-[-122px]  relative z-50 pb-5">
                     <div>
                             <div className="disply text-xs font-semibold pt-5">
                 About Us
@@ -258,7 +258,7 @@ return(
 
 
              
-        <div className="hidden xl:flex mt-[-70px] relative z-10 xl:bg-white">
+        <div className="hidden md:flex mt-[-70px] relative z-10 ">
             {/* For Laptop View*/}
           
            
