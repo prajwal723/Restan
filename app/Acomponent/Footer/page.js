@@ -95,8 +95,9 @@ return(
                 Your Email
                 <hr/>
             </div>
-            <div className="mt-3 display text-[9px] font-normal  text-white pb-3">
-                I agree to the Privacy Policy
+            <div className="mt-3 display text-[9px] font-normal flex text-white pb-3">
+                <input type="checkbox" className="mr-1"/>
+                <p> I agree to the Privacy Policy</p>
             </div>
            
     </div>
@@ -188,8 +189,9 @@ return(
                 Your Email
                 <hr/>
             </div>
-            <div className="mt-3 display text-[9px] font-normal  text-white pb-3">
-                I agree to the Privacy Policy
+            <div className="mt-3 display text-[9px] font-normal flex  text-white pb-3">
+                <input type="checkbox" className="mr-1"/>
+                <p>I agree to the Privacy Policy</p>
             </div>
 
                     </div>
