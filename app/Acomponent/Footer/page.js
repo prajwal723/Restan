@@ -3,8 +3,8 @@
 export default function Footer(){
     
 return(
-    <div className="bg-black 2xl:bg-white ">
-    <div className="xl:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden bg-white">
+    <div className=" 2xl:bg-white ">
+    <div className="xl:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden ">
            {/*     For Mobile View*/}
             <div className="disply text-xs font-semibold">
                 About Us
@@ -262,7 +262,7 @@ return(
             {/* For Laptop View*/}
           
            
-            <div className=" flex flex-row bg-zinc-800 h-40 z-20">
+            <div className=" flex flex-row bg-zinc-800 h-40 z-20 md:w-full">
                              <div className=" flex w-80 ">
                                 <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F9.png&w=640&q=75" className="max-h-40"/>
                          </div>

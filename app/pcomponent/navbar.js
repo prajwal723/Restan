@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menu,setmenu]=useState(false);
   const router = useRouter();
   return (
-    <nav className="bg-white p-4 md:px-10 md:fixed md:z-1 md:w-full md:top-0">
+    <nav className="bg-white p-4 md:px-10 md:fixed md:z-1 md:w-full md:top-0 ">
       <ul className="flex justify-between text-black text-lg font-semibold  items-center md:justify-start  md:mr-20">
         <li>
             <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=1A1A1A" alt="menu" className="h-8 md:hidden " onClick={()=>{setmenu(!menu)}}/>
