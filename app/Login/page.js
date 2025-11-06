@@ -36,7 +36,7 @@ export default function Login(){
                         
                         
                         
-                         <div className="font-[Marcellus] text-2xl font-semibold text-black text-center">
+                         <div className="font-[Marcellus] text-2xl font-semibold text-black text-center dark:text-white">
                             Or Login With
                         </div>
                          <div className="flex flex-col space-y-2 md:flex-row items-center">
