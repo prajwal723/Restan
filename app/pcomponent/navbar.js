@@ -16,6 +16,17 @@ export default function Navbar() {
         </li>
         <ul className="md:flex md:gap-14 flex-row hidden text-center">
           <li onClick={()=>router.push('/')}>Home</li>
+          <select onChange={(e)=>router.push(e.target.value)} className="bg-white border-0 text-black font-semibold cursor-pointer">
+            <option>Pages</option>
+            <option value="/about">About Us</option>
+            <option value="/Chef">Chef</option>
+            <option value="/ChefDetails">Chef Details</option>
+            <option value="/Reservation">Reservation</option>
+            <option value="/Contact">Contact Us</option>
+            <option value="/Register">Register</option>
+            <option value="/Login">Login</option>
+            <option value="/Error">Error page</option>
+          </select>
           <li onClick={()=>router.push('/menu')}>Menu</li>
           <li onClick={()=>router.push('/blog')}>Blog</li>
           <li onClick={()=>router.push('/shop')}>Shop</li>
