@@ -5,9 +5,11 @@ import Navbar from "./pcomponent/navbar";
 import FoodMenu from "./pcomponent/menucontent";
 import BlogContent from "./pcomponent/blogcontent";
 import Footer from "./Acomponent/Footer/page";  
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
     const [dishes,setdishes]=useState(1);
+    const router=useRouter();
 return<>
 <Navbar/>
     <div className="relative overflow-x-hidden bg-gray-100 dark:bg-neutral-900 pt-14 md:pt-28">
@@ -39,7 +41,7 @@ return<>
                 <p className="text-gray-700 md:text-xl dark:text-neutral-500">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
                 <div className="md:flex md:gap-8">
                     <div>
-                        <button className="bg-red-700 text-white py-4 px-5 rounded-4xl md:text-2xl">Discover More</button>
+                        <button className="bg-red-700 text-white py-4 px-5 rounded-4xl md:text-2xl" onClick={()=>router.push('/chefdetails')}>Discover More</button>
                     </div>
                     <div className="hidden md:block">
                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2Fsigneture.png&w=828&q=75" className="h-10 dark:bg-neutral-700 dark:px-3"/>
