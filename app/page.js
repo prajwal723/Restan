@@ -16,7 +16,12 @@ return<>
         <img src="/best-restaurant.png" alt="Best restaurant" className=" scale-200 md:scale-100"/>
         <h1  className=" absolute top-16 md:top-56 md:text-7xl text-center font-bold text-4xl w-full">Best Restaurant</h1>
         <div className="pt-24">
-            <h2 className="text-[#826a45] font-serif text-xl md:text-2xl text-center font-medium dark:text-[#daa85d]">CATEGORY</h2>
+            <div className="flex  justify-center md:gap-3 items-center">
+                <img src="	https://restan-nextjs.vercel.app/_next/static/media/17-2.f96247ed.png" alt="line" className="hidden md:block h-5"/>
+                <h2 className="text-red-500 font-serif text-xl md:text-3xl text-center font-medium ">CATEGORY</h2>
+                <img src="https://restan-nextjs.vercel.app/_next/static/media/18-2.1e981c0c.png" alt="line" className="hidden md:block h-5"/>
+            </div>
+
             <h1 className="font-bold text-4xl text-black text-center md:text-6xl md:my-4 dark:text-white">Choose Your Best Food</h1>
             <div className="md:grid md:grid-cols-4 md:mx-14 "> 
                 <FoodMenu image="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F1.jpg&w=1920&q=75" title="Pizza Slice" ratings="5.0"/>
@@ -44,7 +49,7 @@ return<>
                         <button className="bg-red-700 text-white py-4 px-5 rounded-4xl md:text-2xl" onClick={()=>router.push('/chefdetails')}>Discover More</button>
                     </div>
                     <div className="hidden md:block">
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2Fsigneture.png&w=828&q=75" className="h-10 dark:bg-neutral-700 dark:px-3"/>
+                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2Fsigneture.png&w=828&q=75" className="h-10 dark:px-3  dark:invert"/>
                         <p className="text-gray-700 md:text-xl dark:text-neutral-500">CEO, of Restan Restaurant</p>
                     </div>
                 </div>

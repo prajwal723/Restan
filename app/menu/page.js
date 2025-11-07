@@ -10,7 +10,7 @@ export default function MenuPage() {
     return <>
         <Navbar/>
         <Herosection title="Food Menu"/>
-        <div className="bg-gray-200 dark:bg-neutral-900 pt-8 pb-20 overflow-x-hidden md:pt-24 md:mb-32 ">
+        <div className="bg-gray-200 dark:bg-neutral-900 pt-8 pb-20 overflow-x-hidden md:pt-24 md:pb-40 ">
             <h2 className="text-[#826a45] font-serif text-xl text-center font-medium md:text-2xl md:mb-3 dark:text-[#daa85d]">CATEGORY</h2>
             <h1 className="font-bold text-4xl text-black text-center md:text-6xl dark:text-white">Choose Your Best Food</h1>
             <div className="md:grid md:grid-cols-4 md:mx-14 ">

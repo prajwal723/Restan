@@ -4,7 +4,7 @@ export default function Footer(){
     
 return(
     <div>
-    <div className="md:hidden display flex-col content-start font-sans w-full mt-5 bg-zinc-950 px-8 pt-5 overflow-x-hidden ">
+    <div className="md:hidden display flex-col content-start font-sans w-full  bg-zinc-950 px-8 pt-5 overflow-x-hidden ">
            {/*     For Mobile View*/}
             <div className="disply text-xs font-semibold">
                 About Us
@@ -91,21 +91,18 @@ return(
             <div className="mt-3 display text-[8px] font-normal  text-stone-300">
                 Join our subscribers list to get the latest news and special offers
             </div>
-            <div className="display text-xs mt-5">
-                Your Email
-                <hr/>
-            </div>
+            <input type="email" placeholder="Your Email" className="mt-5  border-b-2 border-neutral-400 text-white w-full  outline-none"/>
             <div className="mt-3 display text-[9px] font-normal flex text-white pb-3">
                 <input type="checkbox" className="mr-1"/>
                 <p> I agree to the Privacy Policy</p>
             </div>
            
     </div>
-    <div className="bg-zinc-00 w-[100%] flex justify-center flex-col h-19 xl:hidden">
+    <div className="bg-zinc-800 w-[100%] flex justify-center flex-col h-19 xl:hidden">
                 <div>
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=750&q=75" className="h-9 mx-auto pb-2"/>
                 </div>
-                <div className="text-[8px] font-light flex justify-center">
+                <div className="text-[8px] font-light text-neutral-300 flex justify-center">
                                         © Copyright 2025. Restan. All Rights Reserved
                                     </div>
 
@@ -185,10 +182,7 @@ return(
             <div className="mt-3 display text-[8px] font-normal  text-stone-300">
                 Join our subscribers list to get the latest news and special offers
             </div>
-            <div className="display text-xs mt-5">
-                Your Email
-                <hr/>
-            </div>
+            <input type="email" placeholder="Your Email" className="mt-5  border-b-2 border-neutral-400 text-white w-full  outline-none"/>
             <div className="mt-3 display text-[9px] font-normal flex  text-white pb-3">
                 <input type="checkbox" className="mr-1"/>
                 <p>I agree to the Privacy Policy</p>
@@ -273,7 +267,7 @@ return(
                                     <div>
                                         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=750&q=75" className="max-h-10"/>
                                     </div>
-                                    <div className="text-xs font-light">
+                                    <div className="text-xs font-light text-neutral-300">
                                         © Copyright 2025. Restan. All Rights Reserved
                                     </div>
                          </div>
