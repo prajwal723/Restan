@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function FoodMenu({image,title,ratings}) {
     return <>
-        <div className="bg-white dark:bg-neutral-800 mx-3 pb-8 mt-8 shadow-lg rounded-xl md:w-fit space-y-3 hover:scale-105 hover:border-b-red-700 hover:border-b-2">
+        <div className="bg-white dark:bg-neutral-800 mx-3 pb-8 mt-8 shadow-lg rounded-xl md:w-fit space-y-3 hover:scale-102 hover:border-b-red-700 hover:border-b-2">
             <img src={image} alt="food item" className="rounded-t-xl md:h-64"/>
             <div className=" flex flex-row gap-16 my-7 items-center">
                 <button className="border-l-[#826a45] border-l-4 relative text-gray-200  bg-gray-200 px-16 py-7 rounded-r-4xl dark:dark:bg-neutral-700 ">

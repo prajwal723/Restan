@@ -5,19 +5,6 @@ import Herosection from "../pcomponent/herosection";
 import Footer from "../Acomponent/Footer/page";
 
 export default function CartPage() {
-    const [img,setimg]=useState(null);
-    const [title,settitle]=useState(null);
-    const [price,setprice]=useState(null);
-    const [quantity,setquantity]=useState(null);
-    const [cross,setcross]=useState(null);
-
-    useEffect(() => {
-        setimg(localStorage.getItem("img"));
-        settitle(localStorage.getItem("title"));
-        setprice(localStorage.getItem("price"));
-        setquantity(localStorage.getItem("quantity"));
-        setcross(localStorage.getItem("cross"));
-    }, []);
 
     return (
         <>
@@ -36,7 +23,7 @@ export default function CartPage() {
 
                 <tbody>
                    <tr className=" text-center">
-                        <td onClick={()=>localStorage.clear()}>{cross}</td>
+                        <td></td>
                         <td className=" place-items-center-safe">
                             <img src={img} className="rounded-full h-20 "/>
                         </td>
