@@ -4,6 +4,8 @@ import Herosection from "../pcomponent/herosection";
 import FoodMenu from "../pcomponent/menucontent";
 import Footer from "../Acomponent/Footer/page";
 import { useRouter } from "next/navigation";
+import Booktable from "../pcomponent/booktable";
+import CustomerReview from "../pcomponent/customerreview";
 
 export default function MenuPage() {
     const router=useRouter();
@@ -31,34 +33,17 @@ export default function MenuPage() {
                         <p className="text-[15px] text-gray-300  my-2.5 md:w-1/2 md:text-lg">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
                         <button className="bg-[#826a45] p-4 mt-6 text-white px-8 rounded-4xl hover:bg-black md:text-2xl" onClick={()=>router.push('/shop')}>Order Now</button>
                     </div>
-                    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75" alt="delivery boy" className="hidden md:block md:w-1/3 absolute right-10 top-20"/>
+                    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75" alt="delivery boy" className="hidden md:block md:w-1/3 absolute right-10 top-20 z-1"/>
                 </div>
 
 
-            <div className=" mt-28 m-3  space-y-3">
-                 <h2 className="text-[#826a45] font-serif text-xl font-medium text-center md:text-2xl dark:text-[#daa85d]">HAPPY CUSTOMERS</h2>
-                 <h1 className="font-bold text-4xl text-black text-center md:text-6xl dark:text-white md:mb-10">Our Customers Feedback</h1>
-                <div className="md:flex md:flex-row md:justify-between md:mx-20">
-                    <div className="relative">
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75" alt="review" className="rounded-full my-5 h-72 shadow-md shadow-blue-200 md:h-96"/>
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F5.jpg&w=640&q=75" alt="a" className="absolute rounded-full h-28 border-3 hidden md:block shadow-2xl border-white top-3 left-64"/>
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F6.jpg&w=640&q=75" alt="b" className="absolute rounded-full h-32 border-4 hidden md:block shadow-2xl border-white top-40 left-80"/>
-                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F7.jpg&w=640&q=75" alt="c" className="absolute rounded-full h-28 border-3 hidden md:block shadow-2xl border-white top-80 left-64"/>
-                    </div>
-                    <div className="md:w-1/2 md:mt-10 space-y-6">
-                        <p className="text-gray-700 md:text-2xl dark:text-neutral-500">⭐⭐⭐⭐⭐ (5/5)</p>
-                        <h1 className="font-bold text-4xl text-black dark:text-white">The best food ever</h1>
-                        <p className="text-gray-700 md:text-xl dark:text-neutral-500">“Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.”</p>
-                        
-                        <hr className=" border-black w-full"/>
-                        
-                       <div>
-                            <p className="font-semibold font-serif text-2xl mb-2  text-black dark:text-white">Matthew J. Wyman</p>
-                            <p className="text-[#826a45] font-semibold">SENIOR CONSULTANT</p>
-                       </div>
-                    </div>
-                </div>
-            </div> 
+            <section>
+                <CustomerReview/>
+            </section>
+
+            <section>
+                <Booktable/>
+            </section> 
         </div>
         <Footer/>
         

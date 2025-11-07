@@ -1,15 +1,15 @@
 export default function BlogContent({image,title,description}) {
     return(
-        <div className=" bg-white rounded-md m-3 my-10 text-gray-800 space-y-3 md:mx-20 dark:bg-neutral-700/65 dark:text-neutral-500">
+        <div className=" bg-white rounded-md m-3 my-10 text-gray-800 space-y-3 md:mx-40 dark:bg-neutral-700/65 dark:text-neutral-500">
             <img src={image} alt="blog image" className="rounded-t-md  md:w-full"/>
             <div className="space-y-3 p-5">
                 <div className=" flex flex-col text-sm md:text-lg space-y-1"> 
                     <div className="flex flex-row">
-                        <img src="https://img.icons8.com/?size=100&id=89550&format=png&color=1A1A1A" alt="calendar" className="h-4  mr-2 md:h-6"/>
+                        <img src="https://img.icons8.com/?size=100&id=89550&format=png&color=1A1A1A" alt="calendar" className="h-4  mr-2 md:h-6 dark:invert"/>
                         12 August,2024
                     </div>
                     <div className="flex flex-row">
-                        <img src="https://img.icons8.com/?size=100&id=Fx70T4fgtNmt&format=png&color=000000" alt="profile" className="h-4  mr-2 md:h-6"/>
+                        <img src="https://img.icons8.com/?size=100&id=Fx70T4fgtNmt&format=png&color=000000" alt="profile" className="h-4  mr-2 md:h-6 dark:invert"/>
                         john Baus
                     </div>
                 </div>
