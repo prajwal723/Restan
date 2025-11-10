@@ -3,6 +3,7 @@ import ChefComp from "../Acomponent/ChefComp/page";
 import Navbar from "../pcomponent/navbar";
 import Herosection from "../pcomponent/herosection";
 import Footer from "../Acomponent/Footer/page";
+import Returntop from "../pcomponent/return-top/page";
 
 export default function Chef(){
     return(
@@ -166,6 +167,7 @@ export default function Chef(){
                     </div>
 
         <Footer/>
+        <Returntop destination="/Chef"/>
 
 
 

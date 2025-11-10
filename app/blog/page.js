@@ -4,6 +4,7 @@ import Herosection from "../pcomponent/herosection";
 import BlogContent from "../pcomponent/blogcontent"; 
 import Footer from "../Acomponent/Footer/page"; 
 import { useState } from "react"; 
+import Returntop from "../pcomponent/return-top/page";
 
 export default function BlogPage() {
   const [blog,setblog]=useState(1);
@@ -28,6 +29,7 @@ export default function BlogPage() {
         </div>
 
       <Footer/>
+      <Returntop destination="/blog"/>
     </div>
   );
 }

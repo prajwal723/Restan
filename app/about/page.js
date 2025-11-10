@@ -1,6 +1,7 @@
 import ChefComp from "../Acomponent/ChefComp/page"
 import Footer from "../Acomponent/Footer/page"
 import Navbar from "../pcomponent/navbar"
+import Returntop from "../pcomponent/return-top/page"
 
 export default function about(){
      return(<>
@@ -86,6 +87,7 @@ export default function about(){
                     </div>
                 </div>
             <Footer/>
+            <Returntop destination="/about"/>
         </div>
 
 
@@ -210,7 +212,7 @@ export default function about(){
             <Footer/>
         </div>
                 
-              
+              <Returntop destination="/about"/>
 
 
 </div>

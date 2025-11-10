@@ -8,6 +8,7 @@ import Footer from "./Acomponent/Footer/page";
 import { useRouter } from "next/navigation";
 import Booktable from "./pcomponent/booktable";
 import CustomerReview from "./pcomponent/customerreview";
+import Returntop from "./pcomponent/return-top/page";
 
 export default function HomePage() {
     const [dishes,setdishes]=useState(1);
@@ -136,6 +137,7 @@ return<>
         </div>
 
         <Footer/>
+        <Returntop destination="/"/>
     </div>
 </>
 

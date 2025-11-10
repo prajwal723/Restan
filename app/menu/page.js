@@ -6,6 +6,7 @@ import Footer from "../Acomponent/Footer/page";
 import { useRouter } from "next/navigation";
 import Booktable from "../pcomponent/booktable";
 import CustomerReview from "../pcomponent/customerreview";
+import Returntop from "../pcomponent/return-top/page";
 
 export default function MenuPage() {
     const router=useRouter();
@@ -46,6 +47,7 @@ export default function MenuPage() {
             </section> 
         </div>
         <Footer/>
+        <Returntop destination="/menu"/>
         
     </>
 }
