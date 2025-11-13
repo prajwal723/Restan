@@ -3,10 +3,26 @@ import Footer from "../Acomponent/Footer/page"
 import Herosection from "../pcomponent/herosection"
 import Navbar from "../pcomponent/navbar"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
+import { auth, createUserWithEmailAndPassword } from "firebase/auth";
+import app from "../firebase/firebase"
 
-export default function Login(){
+
+export default  function Login(){
     const router=useRouter();
-
+    const [email,setemail]=useState("");
+    const [password,setpassword]=useState("");
+       async function handleSignup(){
+            awaitcreateUserWithEmailAndPassword(auth,email,password)
+            .then((userDetail)=>{
+                console.log("User created:",userDetail.user);
+                alert("SignUp Successful!!!")
+            })
+            .catch((error)=>{
+                console.log(error);
+            alert(error.message);
+            })
+        }
     return(<>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
@@ -28,12 +44,12 @@ export default function Login(){
                          <div className=" font-[Marcellus] text-gray-400">
                             Enter your details to create a new account
                         </div>
-                        <input type="email" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Email*"/>
+                        <input type="email" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Email*" value={email} onChange={(emaill)=>setemail(emaill.target.value)}/>
                         
-                        <input type="password" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Password*"/>
+                        <input type="password" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Password*" value={password} onChange={(passwordd)=>setpassword(passwordd.target.value)}/>
                         <input type="password" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Confirm Password*"/>
 
-                        <button className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white">REGISTER</button>
+                        <button className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white" onClick={handleSignup}>REGISTER</button>
 
                         
                         
