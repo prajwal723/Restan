@@ -2,6 +2,7 @@ import Navbar from "../pcomponent/navbar";
 import Herosection from "../pcomponent/herosection";
 import Footer from "../Acomponent/Footer/page";
 import Returntop from "../pcomponent/return-top/page";
+import Video from "../pcomponent/video-openinghour"
  
 export default function Contact(){
     return<>
@@ -36,7 +37,7 @@ export default function Contact(){
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48388.929990966964!2d-74.00332!3d40.711233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1653598669477!5m2!1sen!2sus" className="w-full h-screen py-14 md:py-14"/>
              </div>
 
-             <div className="relative px-3 md:px-20 md:pt-10 md:pb-28">
+             {/* <div className="relative px-3 md:px-20 md:pt-10 md:pb-28">
                 <div className="text-gray-300 text-9xl font-bold font-serif opacity-50 hidden md:block dark:opacity-5">RESTAN</div>
                 <iframe  src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk&controls=0" title="Mr Fox Restaurant Promo Video" className="w-full md:h-120 md:w-1/2"></iframe>
                 <div className="bg-white shadow-md shadow-gray-300 md:w-3xl  space-y-6 px-5 py-9 md:px-17 md:py-24 md:absolute md:top-14 md:right-15 dark:dark:bg-neutral-800 dark:shadow-none ">
@@ -69,7 +70,8 @@ export default function Contact(){
                         </div>
                     </div>
                 </div>
-             </div>
+             </div> */}
+             <Video/>
 
              <Returntop destination="/contact"/>
 

@@ -2,6 +2,8 @@ import ChefComp from "../Acomponent/ChefComp/page"
 import Footer from "../Acomponent/Footer/page"
 import Navbar from "../pcomponent/navbar"
 import Returntop from "../pcomponent/return-top/page"
+import Video from "../pcomponent/video-openinghour"
+import Herosection from "../pcomponent/herosection";
 
 export default function about(){
      return(<>
@@ -9,6 +11,8 @@ export default function about(){
         @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
         </style>
         <div className="lg:hidden bg-neutral-200">
+            <Navbar/>
+            <Herosection title="About Us"/>
             <div className="w-screen flex  bg-neutral-200 flex justify-center ">
                
                 <span className="font-[Marcellus] text-green-700 text-lg font-bold  ">OUR TRUSTED 8K HAPPY PARTNER</span>
@@ -93,8 +97,9 @@ export default function about(){
 
         <div className="hidden lg:flex max-w-screen ">
             <Navbar/>
+           
            <div className="bg-neutral-200 ">
-                     <div className="bg-neutral-200 h-auto w-screen relative">
+                     <div className="bg-gray-200 h-auto w-screen relative ">
                 <img src="https://restan-nextjs.vercel.app/assets/img/shape/1.png" className="w-full h-full absolute z-0"/>
                 <div className="flex flex-row justify-center items-center gap-2 pt-20">
                     <img src="https://restan-nextjs.vercel.app/_next/static/media/17.088ee553.png" className="h-3"/>
@@ -162,7 +167,7 @@ export default function about(){
 
 
 
-            <div className="flex  flex-row justify-center pt-40 mb-50">
+            {/* <div className="flex  flex-row justify-center pt-40 mb-50">
           <div className="bg-zinc-500 h-90 w-120 mt-20">
                                 <div className="text-zinc-300 mt-[-72px] text-7xl font-[Marcellus] font-extrabold">
                                     R E S T A N
@@ -207,7 +212,11 @@ export default function about(){
                 </div>
                         </div>
        
-            </div>
+            </div> */}
+            <section className="mb-10 ">
+
+                <Video/>
+            </section>
             
             <Footer/>
         </div>

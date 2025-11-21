@@ -9,7 +9,7 @@ export default function ChefComp({imagee,namee,role}){
       <div className="h-40 w-40 rounded-full border-0  overflow-hidden relative z-20 ml-[7px] mt-[7px]">
             <img src={imagee} className="w-full h-full object-cover              "/>
       </div>
-      <div className="bg-green-700 w-55 h-12 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col  ">
+      <div className="bg-[#826a45] w-55 h-12 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col  ">
            <div className="text-center">
             {namee}
            </div>
