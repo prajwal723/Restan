@@ -1,5 +1,7 @@
 "use client"
 import Footer from "../Acomponent/Footer/page"
+import { loginComponent } from "../core/authLogic"
+import { useState } from "react"
 import Herosection from "../pcomponent/herosection"
 import Navbar from "../pcomponent/navbar"
 import { useRouter } from "next/navigation"
@@ -7,6 +9,8 @@ import { useRouter } from "next/navigation"
 
 export default function Login(){
     const router=useRouter();
+        const [email,setemail]=useState("");
+        const [password,setpassword]=useState("");
 
     return(<>
             <style>
@@ -29,11 +33,12 @@ export default function Login(){
                          <div className=" font-[Marcellus] text-gray-400">
                             Enter your email and password to continue
                         </div>
-                        <input type="email" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Email*"/>
-                        
-                        <input type="password" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Password*"/>
-
-                        <button className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white">LOGIN</button>
+                        <input type="email" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Email"
+                                                                onChange={(event)=> setemail(event.target.value)}/>
+                                               
+                                               <input type="password" className="bg-sky-200 h-10 md:w-120  border-0 rounded-lg font-[Marcellus] text-gray-950 px-10" placeholder="Password*" onChange={(event)=> setpassword(event.target.value)}/>
+                       
+                                               <button className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white" onClick={async(event)=> {await loginComponent(email,password)}}>Login</button>
 
                         
                         
