@@ -98,7 +98,7 @@ export default function Chef(){
 
             <div className="h-80 w-80 rounded-full border-2 border-zinc-600 relative z-10 ">
                       <div className="h-74 w-74 rounded-full border-0  overflow-hidden relative z-20 ml-[8px] mt-[8px]">
-                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F2.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
+                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F3.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
                       </div>
                       <div className="bg-[#826a45] w-90 h-18 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col justify-center  text-white">
                       <div className="text-center text-2xl ">
@@ -117,7 +117,7 @@ export default function Chef(){
 
                      <div className="h-80 w-80 rounded-full border-2 border-zinc-600 relative z-10 ">
                       <div className="h-74 w-74 rounded-full border-0  overflow-hidden relative z-20 ml-[8px] mt-[8px]">
-                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F1.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
+                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F8.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
                       </div>
                       <div className="bg-[#826a45] w-90 h-18 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col justify-center  text-white">
                       <div className="text-center text-2xl ">
@@ -133,7 +133,7 @@ export default function Chef(){
             
   <div className="h-80 w-80 rounded-full border-2 border-zinc-600 relative z-10 ">
                       <div className="h-74 w-74 rounded-full border-0  overflow-hidden relative z-20 ml-[8px] mt-[8px]">
-                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F2.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
+                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F9.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
                       </div>
                       <div className="bg-[#826a45] w-90 h-18 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col justify-center  text-white">
                       <div className="text-center text-2xl ">
@@ -150,7 +150,7 @@ export default function Chef(){
 
             <div className="h-80 w-80 rounded-full border-2 border-zinc-600 relative z-10 ">
                       <div className="h-74 w-74 rounded-full border-0  overflow-hidden relative z-20 ml-[8px] mt-[8px]">
-                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F2.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
+                      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F10.jpg&w=828&q=75" className="w-full h-full object-cover  "/>
                       </div>
                       <div className="bg-[#826a45] w-90 h-18 relative z-30 mt-[-70px] ml-[-25px] font-[Marcellus] flex flex-col justify-center text-white ">
                       <div className="text-center text-2xl ">
