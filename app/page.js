@@ -17,7 +17,7 @@ return<>
 <Navbar/>
     <div className="relative overflow-x-hidden bg-gray-100 dark:bg-neutral-900 pt-14 md:pt-28">
         <img src="/best-restaurant.png" alt="Best restaurant" className=" scale-200 md:scale-100"/>
-        <h1  className=" absolute top-16 md:top-56 md:text-7xl text-center font-bold text-4xl w-full">Best Restaurant</h1>
+        <h1  className=" absolute top-16 md:top-56 md:text-7xl text-center font-bold text-4xl w-full text-white">Best Restaurant</h1>
         <div className="pt-24">
             <div className="flex  justify-center md:gap-3 items-center">
                 <img src="	https://restan-nextjs.vercel.app/_next/static/media/17-2.f96247ed.png" alt="line" className="hidden md:block h-5"/>
