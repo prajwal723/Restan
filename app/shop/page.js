@@ -45,36 +45,36 @@ export default function ShopPage() {
 function Content1(){
     return<>
         <div className="md:grid md:grid-cols-4 md:mx-7 md:mt-6 md:pb-9 ">
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00" id="1"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00" id="2"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00" id="3"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00" id="4"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00" id="5"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00" id="6"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00" id="7"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00" id="8"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00"/>
         </div>
     </>
 }
 
 function Content2(){
     return<>
-        <div className="md:grid md:grid-cols-4 md:mx-7 md:mt-6 md:pb-9 ">
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00" id="1"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00" id="2"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00" id="3"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00" id="4"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00" id="5"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00" id="6"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00" id="7"/>
-            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00" id="8"/>
+          <div className="md:grid md:grid-cols-2 md:mx-7 md:mt-6 md:pb-9 ">
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" desc="Cheese,Pizza" title="Margherita Pizza" price="12.00" state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" desc="Creamy,Burger" title="Burger" price="8.00" state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" desc="Beef,Steak" title="Grilled Flank Steak" price="14.00"  state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" desc="BBQ,Meat" title="Barbecue Chicken" price="8.00" state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" desc="Food,Roll" title="Vegetable Roll" price="25.00"  state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" desc="Pasta,Spicy" title="Creamy Pasta" price="18.00"  state="2"/>
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" desc="Meat,Shawarma" title="Chicken Shawarma" price="3.00" state="2" />
+            <Shopcontent img="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" desc="Sandwich,Chicken" title="Submarine Sandwich" price="6.00" state="2" />
         </div>
     </>
 }
 
 
-function Shopcontent({img,desc,title,price,state,id}){
-  const [item,setitem]=useState([]);
+function Shopcontent({img,desc,title,price,state}){
+  
     return <>
     <div className={`bg-white dark:bg-neutral-700/65  mx-3 mt-5 py-10 rounded-xl  justify-items-center-safe  ${state==2?'md:flex && md:px-20 md:justify-around':null} space-y-3 hover:scale-102 `}>
         <img src={img} alt="foodproduct" className="h-48"/>
@@ -82,15 +82,8 @@ function Shopcontent({img,desc,title,price,state,id}){
             <p className="text-gray-700 dark:text-white">{desc}</p>
             <p className="font-semibold  text-2xl text-black/80 dark:text-white ">{title}</p>
             <p className="text-[#826a45] text-xl font-semibold dark:text-[#daa85d]">${price}</p>
-            <button className="border-2 border-[#826a45] dark:text-white hover:bg-[#826a45] hover:text-white rounded-3xl text-black/75 px-7 py-3 font-semibold text-[14px] " 
-                onClick={() =>  {
-                    const updated = [...item, id];
-                    setitem(updated);
-                    localStorage.setItem("cart", JSON.stringify(updated));
-                }}
-
-            >ADD TO CART</button>
-                </div>
+            <button className="border-2 border-[#826a45] dark:text-white hover:bg-[#826a45] hover:text-white rounded-3xl text-black/75 px-7 py-3 font-semibold text-[14px] " onClick={()=>{Onset(); alert("Added to cart");}}>ADD TO CART</button>
+        </div>
     </div>
     </>
 }
