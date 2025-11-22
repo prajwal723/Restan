@@ -7,12 +7,12 @@ import Herosection from "../pcomponent/herosection";
 
 export default function about(){
      return(<>
+     <Navbar/>
+      <Herosection title="About Us"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
         </style>
         <div className="lg:hidden bg-neutral-200 dark:bg-neutral-900">
-            <Navbar/>
-            <Herosection title="About Us"/>
             <div className="w-screen flex  bg-neutral-200  justify-center dark:bg-neutral-900">
                
                 <span className="font-[Marcellus] text-[#826a45] text-lg font-bold  ">OUR TRUSTED 8K HAPPY PARTNER</span>
@@ -59,22 +59,22 @@ export default function about(){
                                        <iframe src="https://youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&controls=0&loop=1&playlist=F3zw1Gvn4Mk"/>
 
                     </div>
-               <div>
-                           <div className="font-[Marcellus] text-3xl ml-6 text-black font-bold mt-8 mb-5">
+               <div className="m-3">
+                           <div className="font-[Marcellus] text-3xl ml-6 text-black font-bold mt-8 mb-5 dark:text-white">
                                 Opening Hours
                            </div>
-                           <div className="text-neutral-500 text-sm mb-3 bg-neutral-200 mb-5 dark:bg-neutral-900">
+                           <div className="text-neutral-500 text-sm mb-3 bg-neutral-200 mb-5 dark:bg-neutral-900 dark:text-neutral-100">
                             A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
                            </div>
-                           <div className="text-black font-semibold mb-5">
+                           <div className="text-black font-semibold mb-5 dark:text-white">
                                 Sunday to Tuesday:<br/>
 10:00 - 09:00
                            </div>
-                           <div className="text-black font-semibold mb-5">
+                           <div className="text-black font-semibold mb-5 dark:text-white">
                             Wednesday to Thursday:<br/>
 11:30 - 10:30
                            </div>
-                           <div className="text-black font-semibold" >
+                           <div className="text-black font-semibold dark:text-white" >
                             Friday & Saturday:<br/> 10:30 - 12:00
                            </div>
                 </div>
@@ -86,7 +86,7 @@ export default function about(){
                         <img src="https://img.icons8.com/?size=100&id=9729&format=png&color=FFFFFF" className="h-10 w-10 pl-2 pt-2"/>
                     </div>
                     <div>
-                        <span className="text-gray-600">Call Anytime</span><br/><span className="text-black font-semibold text-xl">+96 98762309389</span>
+                        <span className="text-gray-600 dark:text-neutral-300">Call Anytime</span><br/><span className="text-black font-semibold text-xl dark:text-white">+96 98762309389</span>
                     </div>
                     </div>
                 </div>
@@ -96,7 +96,6 @@ export default function about(){
 
 
         <div className="hidden lg:flex max-w-screen ">
-            <Navbar/>
            
            <div className="bg-neutral-200 ">
                      <div className="bg-gray-200 h-auto w-screen relative ">
@@ -167,52 +166,7 @@ export default function about(){
 
 
 
-            {/* <div className="flex  flex-row justify-center pt-40 mb-50">
-          <div className="bg-zinc-500 h-90 w-120 mt-20">
-                                <div className="text-zinc-300 mt-[-72px] text-7xl font-[Marcellus] font-extrabold">
-                                    R E S T A N
-                                </div>
-                               <div className="flex flex-row justify-center  h-90 w-full relative aspect-h-9 aspect-w-16">
-                                       <iframe src="https://youtube.com/embed/F3zw1Gvn4Mk" className="absolute inset-0 w-full h-full"/ >
 
-                    </div>
-
-
-                
-                        </div>
-                        <div className="bg-white px-5 h-90 w-120 relative z-10 ml-[-70px]">
-                                 <div className="font-[Marcellus] text-3xl ml-6 text-black font-bold mt-8 mb-5 ">
-                                Opening Hours
-                           </div>
-                           <div className="text-neutral-500 text-sm mb-2">
-                            A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
-                           </div>
-                           <div className="text-black font-semibold mb-2">
-                                Sunday to Tuesday:<br/>
-10:00 - 09:00
-                           </div>
-                           <div className="text-black font-semibold mb-2">
-                            Wednesday to Thursday:<br/>
-11:30 - 10:30
-                           </div>
-                           <div className="text-black font-semibold mb-2" >
-                            Friday & Saturday:<br/> 10:30 - 12:00
-                           </div>
-                           <div>
-
-                    <div className="flex flex-row bg-white w-120 ml-[-20px]">
-
-                    <div className="bg-green-500 border-0 rounded-full h-10 w-10  ml-2 mt-2 ">
-                        <img src="https://img.icons8.com/?size=100&id=9729&format=png&color=FFFFFF" className="h-10 w-10 pl-1 pt-1"/>
-                    </div>
-                    <div>
-                        <span className="text-gray-600">Call Anytime</span><br/><span className="text-black font-semibold text-xl">+96 98762309389</span>
-                    </div>
-                    </div>
-                </div>
-                        </div>
-       
-            </div> */}
             <section className="mb-10 ">
 
                 <Video/>

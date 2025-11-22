@@ -50,15 +50,6 @@ export default function CartPage() {
                 </thead>
 
                 <tbody>
-                   useEffect(
-                    const uniqueIds = ids.reduce((acc, num) => {
-  
-  if (!acc.includes(num)) {
-    acc.push(num);
-  }
-  );
-                    )
-                   )
                 </tbody>
             </table>
             <Footer /></div>
