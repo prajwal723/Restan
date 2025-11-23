@@ -86,6 +86,7 @@ function Shopcontent({img,desc,title,price,state,id}){
                 onClick={() =>  {
                     const updated = [...item, id];
                     setitem(updated);
+                    cosole.log(setitem);
                     localStorage.setItem("cart", JSON.stringify(updated));
                 }}
 
