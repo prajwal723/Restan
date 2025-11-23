@@ -114,210 +114,210 @@ useEffect(()=>{
    <Navbar/>
    <Herosection title={"Cart"}/>
 
-   <div className=" flex flex-col   mt-40  bg-white pt-20">
-                <div className={`flex flex-row mx-auto border-1 border-zinc-400`}>
-                                  <div className="flex bg-gray-200 w-30 text-lg font-extrabold h-13 text-zinc-500 pt-3">
+   <div className=" flex flex-col   md:flex hidden  bg-white pt-20 px-5">
+                <div className={`flex flex-row bg-gray-200   justify-around w-full border-1 border-zinc-400`}>
+                                  <div className="flex bg-gray-200  text-lg font-extrabold  text-zinc-500 pt-3">
                              Remove
                          </div>
-                         <div className="flex bg-gray-200 w-58 text-lg font-extrabold h-13 text-zinc-500 pt-3">
+                         <div className="flex bg-gray-200  text-lg font-extrabold h-13 text-zinc-500 pt-3">
                              Thumbnail
                          </div>
-                         <div className="flex bg-gray-200 w-70 text-lg font-extrabold h-13 text-zinc-500 pt-3">
+                         <div className="flex bg-gray-200  text-lg font-extrabold h-13 text-zinc-500 pt-3">
                              Product
                          </div>
-                         <div className="flex bg-gray-200 w-40 text-lg font-extrabold h-13 text-zinc-500 pt-3">
+                         <div className="flex bg-gray-200  text-lg font-extrabold h-13 text-zinc-500 pt-3">
                               Price
                          </div>
-                         <div className="flex bg-gray-200 w-50 text-lg font-extrabold h-13 text-zinc-500 pt-3">
+                         <div className="flex bg-gray-200  text-lg font-extrabold h-13 text-zinc-500 pt-3">
                              Quantity
                          </div>
-                         <div className="flex bg-gray-200 w-50 text-lg font-extrabold h-13 text-zinc-500 pt-3"> 
+                         <div className="flex bg-gray-200  text-lg font-extrabold h-13 text-zinc-500 pt-3"> 
                              Subtotal
                          </div>
                 </div>
                     
                 
-                 <div className={`flex flex-row mx-auto   ${it0 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40  border-white">
+                 <div className={`flex flex-row    ${it0 ==1 ? "block" : "hidden"} border-1 justify-around w-full border-zinc-400`}>
+                                  <div className="flex bg-white   border-white">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40 border-white">
+                         <div className="flex bg-white  border-white">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5 border-white">
+                         <div className="flex bg-white  text-2xl font-semibold text-black py-15 px-5 border-white">
                              Margherita Pizza
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5 border-white">
+                         <div className="flex bg-white text-zinc-600 text-2xl font-thin py-15 px-5 border-white">
                               $12
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5 border-white">
+                         <div className="flex bg-white text-black text-2xl  py-15 px-5 border-white">
                              {nit0}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5 border-white">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5 border-white">
                              ${amt0}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it1 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it1 ==1 ? "block" : "hidden"} border-1 justify-around w-full border-zinc-400`}>
+                                  <div className="flex bg-white  ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white  text-2xl font-semibold text-black py-15 px-5">
                              Burger
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                               $8
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit1}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt1}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it2 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it2 ==1 ? "block" : "hidden"} border-1  justify-around w-full border-zinc-400`}>
+                                  <div className="flex bg-white  ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white  text-2xl font-semibold text-black py-15 px-5">
                              Grilled Stake
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                               $14
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit2}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt2}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it3 ==1 ? "block" : "hidden"} border-1 border-zinc-400 `}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it3 ==1 ? "block" : "hidden"} border-1  justify-around w-full border-zinc-400 `}>
+                                  <div className="flex bg-white  ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white text-2xl font-semibold text-black py-15 px-5">
                              Barbecue Chicken
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white text-zinc-600 text-2xl font-thin py-15 px-5">
                               $8
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white text-black text-2xl  py-15 px-5">
                              {nit3}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt3}
                          </div>
                          
                 </div>
-                <div className={`flex flex-row mx-auto   ${it4 ==1 ? "block" : "hidden"}border-1 border-zinc-400 border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it4 ==1 ? "block" : "hidden"}border-1 justify-around w-full border-zinc-400 border-1 border-zinc-400`}>
+                                  <div className="flex bg-white ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white text-2xl font-semibold text-black py-15 px-5">
                              Vegetable Roll
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                               $25
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit4}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt4}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it5 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it5 ==1 ? "block" : "hidden"} border-1 justify-around w-full border-zinc-400`}>
+                                  <div className="flex bg-white ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white  text-2xl font-semibold text-black py-15 px-5">
                              Creamy Pasta
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                               $18
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit5}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt5}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it6 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it6 ==1 ? "block" : "hidden"} border-1 justify-around w-full border-zinc-400`}>
+                                  <div className="flex bg-white  ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white  text-2xl font-semibold text-black py-15 px-5">
                              Chicken Shawarma
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                               $3
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit6}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt6}
                          </div>
                          
                 </div>
                 
-                <div className={`flex flex-row mx-auto   ${it7 ==1 ? "block" : "hidden"} border-1 border-zinc-400`}>
-                                  <div className="flex bg-white w-40 h-40 ">
+                <div className={`flex flex-row mx-auto   ${it7 ==1 ? "block" : "hidden"} border-1 border-zinc-400 justify-around w-full`}>
+                                  <div className="flex bg-white  ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>
-                         <div className="flex bg-white w-70 h-40">
+                         <div className="flex bg-white ">
                              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75" className="h-30 mx-auto my-auto" />
                          </div>
-                         <div className="flex bg-white w-80 h-40 text-2xl font-semibold text-black py-15 px-5">
+                         <div className="flex bg-white text-2xl font-semibold text-black py-15 px-5">
                              Submarine Sandwich
                          </div>
-                         <div className="flex bg-white w-50 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white text-zinc-600 text-2xl font-thin py-15 px-5">
                               $6
                          </div>
-                         <div className="flex bg-white w-60 h-40 text-black text-2xl  py-15 px-5">
+                         <div className="flex bg-white  text-black text-2xl  py-15 px-5">
                              {nit7}
                          </div>
-                         <div className="flex bg-white w-70 h-40 text-zinc-600 text-2xl font-thin py-15 px-5">
+                         <div className="flex bg-white  text-zinc-600 text-2xl font-thin py-15 px-5">
                              ${amt7}
                          </div>
                          
                 </div>
-                <div className="flex flex-row justify-between w-300 mx-auto bg-white py-4 border-1 border-zinc-400" >
-                    <div >
-                             <button  className="bg-white border-black border-1  font-semibold rounded-xl h-10 w-40 text-zinc-800  pl-5">Coupon Code </button>
-                              <button className="bg-red-950 h-10 w-40 rounded-xl  ml-5 font-semibold text-white pl-5">Apply Coupon </button>
+                <div className="flex flex-row justify-between px-10 bg-white py-4 border-1 border-zinc-400 " >
+                    <div className="gap-9 flex">
+                             <button  className="bg-white border-black border-1 justify-center items-center flex font-semibold rounded-xl h-10 w-40 text-zinc-800  ">Coupon Code </button>
+                              <button className="bg-red-950 h-10 w-40 rounded-xl flex justify-center items-center font-semibold text-white ">Apply Coupon </button>
                     </div>
                     <div>
-                                 <button className="bg-red-950 h-10 w-40 rounded-xl font-semibold text-white pl-13">Checkout</button>
+                                 <button className="bg-red-950 h-10 w-40 rounded-xl font-semibold text-white ">Checkout</button>
                     </div>
 
                 </div>
@@ -325,7 +325,7 @@ useEffect(()=>{
                 {famt}
    </div>
     
-    <div className="font-[Marcellus] text-4xl text-black font-bold bg-white py-10 px-45  ">
+    <div className="md:flex hidden font-[Marcellus] text-4xl text-black font-bold bg-white py-10 px-45  md:pb-40">
             Cart Totals
     
     
@@ -360,6 +360,6 @@ Shipping to Australia.<br/>
     </div>
     </div>
     <Footer/>
-    <Returntop/>
+    <Returntop destination="cart"/>
     </>)
 }
