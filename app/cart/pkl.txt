@@ -1,0 +1,1 @@
+                      <div className={`flex flex-row mx-auto w-320 mt-40 ${selectedItems[1] == 1 ? "block" : "hidden"}`}>
