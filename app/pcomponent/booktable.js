@@ -1,6 +1,6 @@
 export default function Booktable() {
     return <>
-        <div className="bg-gray-900 relative p-3 pb-72 pt-14 mb-32 space-y-6 md:pb-20 md:px-16 md:mt-0">
+        <div className="bg-gray-900 relative p-3 pb-72 pt-14 mb-32 space-y-6 md:pb-20 md:px-16 md:mt-0 text-white">
             <div className="md:w-1/2 space-y-6">
                 <h1 className="font-semibold text-2xl md:text-3xl">Reservation</h1>
                 <h2 className="font-semibold text-4xl md:text-6xl">Reservation Your Favorite Private Table</h2>
