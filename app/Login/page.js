@@ -20,7 +20,7 @@ export default function Login() {
       <Navbar />
       <Herosection title={"Login Page"} />
 
-      <div className="bg-zinc-100 h-full w-screen dark:bg-neutral-900 ">
+      <div className="bg-zinc-100 h-full  dark:bg-neutral-900 ">
         <div className="w-full px-3  md:px-20 flex flex-col md:flex-row py-8 border-0 md:mb-32">
           <div className="md:w-1/2">
             <img
