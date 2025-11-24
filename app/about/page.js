@@ -97,7 +97,7 @@ export default function about(){
 
         <div className="hidden lg:flex max-w-screen overflow-x-hidden">
            
-           <div className="bg-neutral-200 ">
+           <div className="bg-neutral-200 overflow-x-hidden">
                      <div className="bg-gray-200 h-auto w-screen relative ">
                 <img src="https://restan-nextjs.vercel.app/assets/img/shape/1.png" className="w-full h-full absolute z-0"/>
                 <div className="flex flex-row justify-center items-center gap-2 pt-20">
