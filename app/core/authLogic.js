@@ -10,7 +10,7 @@ export async function loginComponent(email,password){
     }catch(err){
         console.log(JSON.stringify(err));
         alert("You have not registered yet.Kindly register to continue.")
-    
+        throw err;
     }
     }
   
@@ -22,5 +22,6 @@ export async function registerComponent(email,password){
         
     }catch(err){
         console.log(JSON.stringify(err));
+        throw err;
     }
 }

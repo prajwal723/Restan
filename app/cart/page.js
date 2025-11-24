@@ -9,8 +9,8 @@ export default function Cart(){
       <style>
                 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
                 </style>
-const importeditems = JSON.parse(localStorage.getItem("cartt") || "[]");
-console.log(importeditems);
+// const importeditems = JSON.parse(localStorage.getItem("cartt") || "[]");
+// console.log(importeditems);
 const [it0,setit0]=useState(0);
 const [it1,setit1]=useState(0);
 const [it2,setit2]=useState(0);
@@ -42,6 +42,7 @@ const [nit7,setnit7]=useState(0);
 
 
 useEffect(()=>{
+    const importeditems = JSON.parse(localStorage.getItem("cartt") || "[]");
    let selectedItems=[];
    let noItems=[];
    for(let i=0;i<8;i++){
@@ -325,7 +326,7 @@ useEffect(()=>{
                 {famt}
    </div>
     
-    <div className="md:flex hidden font-[Marcellus] text-4xl text-black font-bold bg-white py-10 px-45  md:pb-40">
+    <div className="md:flex md:flex-col hidden font-[Marcellus] text-4xl text-black font-bold bg-white py-10 px-45  md:pb-40">
             Cart Totals
     
     
