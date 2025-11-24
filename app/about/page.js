@@ -95,7 +95,7 @@ export default function about(){
         </div>
 
 
-        <div className="hidden lg:flex max-w-screen ">
+        <div className="hidden lg:flex max-w-screen overflow-x-hidden">
            
            <div className="bg-neutral-200 ">
                      <div className="bg-gray-200 h-auto w-screen relative ">
