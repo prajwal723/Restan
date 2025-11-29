@@ -57,12 +57,12 @@ export default function Login() {
             <button
               className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white"
               onClick={async (event) => {
-               try{
-                 await registerComponent(email, password);
-                await router.push("/Login");
-               }catch{
-                console.log("/error");
-               }
+                try {
+                  await registerComponent(email, password);
+                  await router.push("/Login");
+                } catch {
+                  console.log("/error");
+                }
               }}
             >
               REGISTER

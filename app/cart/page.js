@@ -225,7 +225,7 @@ useEffect(()=>{
                          </div>
                          
                 </div>
-                <div className={`flex flex-row mx-auto   ${it4 ==1 ? "block" : "hidden"}border-1 justify-around w-full border-zinc-400 border-1 border-zinc-400`}>
+                <div className={`flex flex-row mx-auto   ${it4 ==1 ? "block" : "hidden"} border-1 justify-around w-full border-zinc-400 border-1 border-zinc-400`}>
                                   <div className="flex bg-white ">
                              <img src="https://img.icons8.com/?size=100&id=59754&format=png&color=FA5252" className="h-10 mx-auto my-auto"/>
                          </div>

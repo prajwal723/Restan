@@ -24,27 +24,54 @@ export default function reservation() {
             <h1 className="text-black font-semibold text-3xl md:text-5xl dark:text-white">
               Book A Table
             </h1>
-                <form className="space-y-3 md:space-y-6" onSubmit={()=>{alert("Table Booked!")}}>
-                <input type="tel" placeholder="Phone Number" minLength={10} maxLength={10} required className="border dark:bg-gray-600 border-gray-300 p-2 rounded-md w-full md:p-3" />
-                <div className="border-gray-300  border dark:bg-gray-600 p-2 rounded-md w-full md:p-3">
-                    <select >
-                        <option className="text-black">1 Person</option>
-                        <option className="text-black">2 Person</option>
-                        <option className="text-black">3 Person</option>
-                        <option className="text-black">4 Person</option>
-                        <option className="text-black">5 Person</option>
-                    </select>
-                </div>
-                <input type="date" placeholder="Date" required className="border dark:bg-gray-600 border-gray-300 p-2 text-white rounded-md w-full md:p-3"/>
-                <input type="time" placeholder="Time" required className="border dark:bg-gray-600 border-gray-300 p-2 rounded-md w-full md:p-3" />
-                <button type="submit" className="text-white bg-red-800 p-3 rounded-xl px-6 md:p-4 md:text-lg" >Book A Table</button>
-                </form>
+            <form
+              className="space-y-3 md:space-y-6"
+              onSubmit={() => {
+                alert("Table Booked!");
+              }}
+            >
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                minLength={10}
+                maxLength={10}
+                required
+                className="border dark:bg-gray-600 border-gray-300 p-2 rounded-md w-full md:p-3"
+              />
+              <div className="border-gray-300  border dark:bg-gray-600 p-2 rounded-md w-full md:p-3">
+                <select>
+                  <option className="text-black">1 Person</option>
+                  <option className="text-black">2 Person</option>
+                  <option className="text-black">3 Person</option>
+                  <option className="text-black">4 Person</option>
+                  <option className="text-black">5 Person</option>
+                </select>
+              </div>
+              <input
+                type="date"
+                placeholder="Date"
+                required
+                className="border dark:bg-gray-600 border-gray-300 p-2 text-white rounded-md w-full md:p-3"
+              />
+              <input
+                type="time"
+                placeholder="Time"
+                required
+                className="border dark:bg-gray-600 border-gray-300 p-2 rounded-md w-full md:p-3"
+              />
+              <button
+                type="submit"
+                className="text-white bg-red-800 p-3 rounded-xl px-6 md:p-4 md:text-lg"
+              >
+                Book A Table
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
       <Footer />
-      <Returntop destination="/reservation"/>
+      <Returntop destination="/reservation" />
     </>
   );
 }

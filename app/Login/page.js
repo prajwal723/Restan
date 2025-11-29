@@ -53,7 +53,7 @@ export default function Login() {
               className="bg-green-700 h-10 md:w-120  p-2 border-0 rounded-lg w-full text-white"
               onClick={async (event) => {
                 try {
-                  await loginComponent(email, password)
+                  await loginComponent(email, password);
                   await router.push("/");
                 } catch (exception) {
                   console.log("error");
