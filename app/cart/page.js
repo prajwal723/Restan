@@ -106,7 +106,7 @@ useEffect(()=>{
          setamt6(amt6*noItems[6]);
          setamt7(amt7*noItems[7]);
 
-          setfamt(amt0*noItems[0] + amt1*noItems[1]+amt3*noItems[3]+amt4*noItems[4]+amt5*noItems[5]+amt6*noItems[6]+amt7*noItems[7]);
+          setfamt(amt0*noItems[0] + amt1*noItems[1] + amt2*noItems[2] +amt3*noItems[3]+amt4*noItems[4]+amt5*noItems[5]+amt6*noItems[6]+amt7*noItems[7]);
         
         },[]);
  
@@ -323,7 +323,7 @@ useEffect(()=>{
 
                 </div>
 
-                {famt}
+                
    </div>
     
     <div className="md:flex md:flex-col hidden font-[Marcellus] text-4xl text-black font-bold bg-white py-10 px-45  md:pb-40">
